@@ -33,20 +33,3 @@ section {
     }
 }
 
-.is-pc {
-    display: block;
-}
-
-.is-sp {
-    display: none;
-}
-
-@include mq("sp") {
-    .is-pc {
-        display: none;
-    }
-
-    .is-sp {
-        display: block;
-    }
-}

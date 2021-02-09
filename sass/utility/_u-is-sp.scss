@@ -1,0 +1,9 @@
+.u-is-sp {
+    display: none;
+}
+
+@include mq("sp") {
+    .u-is-sp {
+        display: block;
+    }
+}

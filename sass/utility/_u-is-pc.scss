@@ -1,0 +1,12 @@
+/*=======================
+u-is-pc
+====================== */
+.u-is-pc {
+    display: block;
+}
+
+@include mq("sp") {
+    .u-is-pc {
+        display: none;
+    }
+}
