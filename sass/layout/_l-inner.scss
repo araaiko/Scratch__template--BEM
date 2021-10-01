@@ -7,14 +7,19 @@ l-inner
     max-width: 1200px; //適宜指定
     margin: 0 auto;
     height: inherit;
+    padding-left: 16px;
+    padding-right: 16px;
 
-    @include mq("tab") {
+    // 768px以上
+    @include mq("md") {
         padding-left: 24px;
         padding-right: 24px;
     }
 
-    @include mq("sp") {
-        padding-left: 16px;
-        padding-right: 16px;
+    // 1024px以上
+    @include mq("lg") {
+        padding-left: 0;
+        padding-right: 0;
+
     }
 }

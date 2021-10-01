@@ -2,11 +2,12 @@
 u-is-pc
 ====================== */
 .u-is-pc {
-    display: block;
+    display: none;
 }
 
-@include mq("sp") {
+// 1024px以上
+@include mq("lg") {
     .u-is-pc {
-        display: none;
+        display: block;
     }
 }

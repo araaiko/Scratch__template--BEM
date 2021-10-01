@@ -1,9 +1,13 @@
+/*=======================
+u-is-sp
+====================== */
 .u-is-sp {
-    display: none;
+    display: block;
 }
 
-@include mq("sp") {
+// 1024px以上
+@include mq("lg") {
     .u-is-sp {
-        display: block;
+        display: none;
     }
 }

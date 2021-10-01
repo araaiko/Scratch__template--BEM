@@ -85,6 +85,10 @@ input[type="reset"] {
 全体共通
 ====================== */
 
+body {
+	font-size: 16px;
+}
+
 img {
 	border: none;
 	height: auto;
@@ -97,26 +101,20 @@ a {
 }
 
 section {
-	padding-bottom: 120px;
-	padding-top: 100px;
-}
-
-.is-pc {
-	display: block;
-}
-
-.is-sp {
-	display: none;
+	padding-bottom: 30px;
+	padding-top: 70px;
 }
 
 /*=======================
-inner
+l-inner
 ====================== */
 
-.inner {
+.l-inner {
 	height: inherit;
 	margin: 0 auto;
 	max-width: 1200px;
+	padding-left: 16px;
+	padding-right: 16px;
 	width: 100%;
 }
 
@@ -124,38 +122,54 @@ inner
 Section Title
 ====================== */
 
-@media screen and (max-width: 1023px) {
+/*=======================
+u-is-pc
+====================== */
+
+.u-is-pc {
+	display: none;
+}
+
+/*=======================
+u-is-sp
+====================== */
+
+.u-is-sp {
+	display: block;
+}
+
+@media screen and (min-width: 768px) {
 
 section {
 	padding-bottom: 50px;
 	padding-top: 90px;
 }
 
-.inner {
+.l-inner {
 	padding-left: 24px;
 	padding-right: 24px;
 }
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1024px) {
 
 section {
-	padding-bottom: 30px;
-	padding-top: 70px;
+	padding-bottom: 120px;
+	padding-top: 100px;
 }
 
-.is-pc {
-	display: none;
+.l-inner {
+	padding-left: 0;
+	padding-right: 0;
 }
 
-.is-sp {
+.u-is-pc {
 	display: block;
 }
 
-.inner {
-	padding-left: 16px;
-	padding-right: 16px;
+.u-is-sp {
+	display: none;
 }
 
 }
