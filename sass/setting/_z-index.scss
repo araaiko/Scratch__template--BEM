@@ -1,0 +1,15 @@
+// z-index
+$layers: (
+    loading-screen: 9999,
+    modal: 100,
+    drawer: 40,
+    sp-menu: 35,
+    floating: 30,
+    header: 20,
+    base: 1,
+);
+
+// 入力例
+// .hoge {
+//   z-index: zi(header);
+// }

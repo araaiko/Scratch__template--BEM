@@ -1,9 +1,10 @@
 /*=======================
 全体共通
 ====================== */
- body {
-    font-size: 16px;
- }
+body {
+    font-size: $fz-standard;
+    font-family: $font-family--base;
+}
 
 img {
     max-width: 100%;
@@ -30,7 +31,5 @@ section {
     @include mq("lg") {
         padding-top: 100px; //適宜指定
         padding-bottom: 120px; //適宜指定
-    
     }
 }
-

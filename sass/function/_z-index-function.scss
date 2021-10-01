@@ -1,0 +1,4 @@
+//z-index用の関数を定義
+@function zi($layer) {
+	@return map-get($layers, $layer);
+}
