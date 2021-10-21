@@ -13,6 +13,11 @@ Chrome/Firefox/Edgeなど、各ブラウザはそれぞれデフォルトで効�
     box-sizing: border-box;
 }
 
+html {
+    /* 360px未満ではviewport固定の時に必要 */
+    -webkit-text-size-adjust: 100%;
+}
+
 html,
 body,
 h1,
