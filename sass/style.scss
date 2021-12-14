@@ -1,9 +1,7 @@
-@import "setting/**";
-@import "function/**";
-@import "reset/**";
-@import "foundation/**";
-@import "layout/**";
-@import "component/**";
-@import "project/**";
-@import "utility/**";
-@import "external/**";
+@use "reset";
+@use "foundation";
+@use "layout";
+@use "component";
+@use "project";
+@use "utility";
+@use "external";

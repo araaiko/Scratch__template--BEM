@@ -1,4 +1,6 @@
+@use "sass:math";
+
 @function vw($pixel) {
     $viewport: 1600; // 基準となるビューポート
-    @return ($pixel / $viewport * 100vw);
+    @return math.div($pixel, $viewport) * 100vw;
 }

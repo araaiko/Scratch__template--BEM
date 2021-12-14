@@ -1,3 +1,8 @@
+//z-index用の関数を定義
+@function zi($layer) {
+	@return map-get($layers, $layer);
+}
+
 // z-index
 $layers: (
     loading-screen: 9999,
@@ -11,5 +16,5 @@ $layers: (
 
 // 入力例
 // .hoge {
-//   z-index: zi(header);
+//   z-index: g.zi(header);
 // }

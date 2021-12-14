@@ -10,6 +10,10 @@ Chrome/Firefox/Edgeなど、各ブラウザはそれぞれデフォルトで効�
 	box-sizing: border-box;
 }
 
+html { /* 360px未満ではviewport固定の時に必要 */
+	-webkit-text-size-adjust: 100%;
+}
+
 html,
 body,
 h1,
@@ -74,9 +78,9 @@ img {
 	vertical-align: bottom;
 }
 
-input[type="submit"],
-input[type="button"],
-input[type="reset"] {
+input[type=submit],
+input[type=button],
+input[type=reset] {
 	-webkit-appearance: none;
 	border-radius: 0;
 }
@@ -86,6 +90,7 @@ input[type="reset"] {
 ====================== */
 
 body {
+	font-family: "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Noto Serif JP", serif;
 	font-size: 16px;
 }
 
@@ -119,10 +124,6 @@ l-inner
 }
 
 /*=======================
-Section Title
-====================== */
-
-/*=======================
 u-is-pc
 ====================== */
 
@@ -137,6 +138,10 @@ u-is-sp
 .u-is-sp {
 	display: block;
 }
+
+/*=======================
+Section Title
+====================== */
 
 @media screen and (min-width: 768px) {
 

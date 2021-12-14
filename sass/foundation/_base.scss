@@ -1,9 +1,11 @@
+@use "../global" as g;
+
 /*=======================
 全体共通
 ====================== */
 body {
-    font-size: $fz-standard;
-    font-family: $font-family--base;
+    font-size: g.$fz-standard;
+    font-family: g.$font-family--base;
 }
 
 img {
@@ -22,13 +24,13 @@ section {
     padding-bottom: 30px; //適宜指定
 
     // 768px以上
-    @include mq("md") {
+    @include g.mq("md") {
         padding-top: 90px; //適宜指定
         padding-bottom: 50px; //適宜指定
     }
 
     // 1024px以上
-    @include mq("lg") {
+    @include g.mq("lg") {
         padding-top: 100px; //適宜指定
         padding-bottom: 120px; //適宜指定
     }

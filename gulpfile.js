@@ -1,7 +1,7 @@
 const gulp = require("gulp");
 
 /* sass */
-const sass = require("gulp-sass");
+const sass = require("gulp-dart-sass");
 const plumber = require("gulp-plumber");
 const notify = require("gulp-notify");
 const sassGlob = require("gulp-sass-glob");
@@ -13,22 +13,8 @@ const cssdeclsort = require("css-declaration-sorter");
 /* browser-sync */
 const browserSync = require("browser-sync");
 
-/* image */
-var imagemin = require("gulp-imagemin");
-var imageminPngquant = require("imagemin-pngquant");
-var imageminMozjpeg = require("imagemin-mozjpeg");
-
-var imageminOption = [
-    imageminPngquant({ quality: [0.65, 0.8] }),
-    imageminMozjpeg({ quality: 85 }),
-    imagemin.gifsicle({
-        interlaced: false,
-        optimizationLevel: 1,
-        colors: 256
-    }),
-    imagemin.optipng(),
-    imagemin.svgo()
-];
+/* select use compiler */
+sass.compiler = require("sass"); // Dart Sass = "sass"
 
 gulp.task("sass", function () {
     return gulp
@@ -59,16 +45,9 @@ gulp.task("browser-sync", function (done) {
     done();
 });
 
-gulp.task('imagemin', function () {
-    return gulp
-        .src('./img/**/*.{png,jpg,gif,svg}')
-        .pipe(imagemin(imageminOption))
-        .pipe(gulp.dest('./img/min'));
-});
-
 gulp.task("bs-reload", function (done) {
     browserSync.reload();
     done();
 });
 
-gulp.task("default", gulp.series(gulp.parallel("browser-sync", "sass", "imagemin", "watch")));
+gulp.task("default", gulp.series(gulp.parallel("browser-sync", "sass", "watch")));

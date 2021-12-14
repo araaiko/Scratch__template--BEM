@@ -1,8 +1,0 @@
-//メディアクエリ用のmixinを定義。デフォ値はsm
-@mixin mq($breakpoint: sm) {
-    //map-get(マップ型変数〜第一引数〜, キー〜第二引数〜)で値を取得
-    @media #{map-get($breakpoints, $breakpoint)} {
-        //@contentでこの中をカスタムできる
-        @content;
-    }
-}

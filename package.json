@@ -9,7 +9,7 @@
     "license": "ISC",
     "devDependencies": {
         "autoprefixer": "^9.8.6",
-        "browser-sync": "^2.26.13",
+        "browser-sync": "^2.27.7",
         "css-declaration-sorter": "^5.1.2",
         "eslint-config-wordpress": "^2.0.0",
         "gulp": "^4.0.2",
@@ -28,5 +28,8 @@
         "stylelint-config-recommended-scss": "^4.2.0",
         "stylelint-config-wordpress": "^17.0.0",
         "stylelint-scss": "^3.18.0"
+    },
+    "dependencies": {
+        "gulp-dart-sass": "^1.0.2"
     }
 }
