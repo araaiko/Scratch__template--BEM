@@ -17,7 +17,17 @@ gulp.task("sass", function () {
         .src("./sass/**/*.scss")
         .pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>") }))
         .pipe(sass({ outputStyle: "expanded" }))
-        .pipe(postcss([autoprefixer()]))
+        .pipe(
+            postcss([
+                autoprefixer({
+                    // IEは11以上、Androidは4、ios safariは8以上
+                    // その他は最新2バージョンで必要なベンダープレフィックスを付与する
+                    //指定の内容はpackage.jsonに記入している
+                    cascade: false,
+                    grid: true
+                })
+            ])
+        )
         .pipe(postcss([cssdeclsort({ order: "alphabetical" })]))
         .pipe(mmq())
         .pipe(gulp.dest("./css"));
