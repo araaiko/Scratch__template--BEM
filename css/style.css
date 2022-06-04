@@ -1,3 +1,7 @@
+/*=======================
+animation
+====================== */
+
 /*====================================================================
 reset.css
 
@@ -113,17 +117,28 @@ section {
 }
 
 /*=======================
-l-inner
+home
 ====================== */
 
-.l-inner {
-	height: inherit;
-	margin: 0 auto;
-	max-width: 1200px;
-	padding-left: 16px;
-	padding-right: 16px;
-	width: 100%;
-}
+/*=======================
+home mv
+====================== */
+
+/*=======================
+home about
+====================== */
+
+/*=======================
+btn
+====================== */
+
+/*=======================
+footer
+====================== */
+
+/*=======================
+header
+====================== */
 
 /*=======================
 u-is-pc
@@ -141,20 +156,11 @@ u-is-sp
 	display: block;
 }
 
-/*=======================
-Section Title
-====================== */
-
 @media screen and (min-width: 768px) {
 
 section {
 	padding-bottom: 50px;
 	padding-top: 90px;
-}
-
-.l-inner {
-	padding-left: 24px;
-	padding-right: 24px;
 }
 
 }
@@ -166,17 +172,40 @@ section {
 	padding-top: 100px;
 }
 
-.l-inner {
-	padding-left: 0;
-	padding-right: 0;
-}
-
 .u-is-pc {
 	display: block;
 }
 
 .u-is-sp {
 	display: none;
+}
+
+}
+
+@-webkit-keyframes spin {
+
+0% {
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+100% {
+	-webkit-transform: rotate(1turn);
+	transform: rotate(1turn);
+}
+
+}
+
+@keyframes spin {
+
+0% {
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+100% {
+	-webkit-transform: rotate(1turn);
+	transform: rotate(1turn);
 }
 
 }
