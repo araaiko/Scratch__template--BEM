@@ -3,7 +3,7 @@ BEM版テンプレート
 
 ※各フォルダには必ずエントリポイント用ファイルとして、index.scssを用意する。
 
-**globalフォルダ**
+**globalフォルダ**<br/>
 変数、placeholder、animation、など
 
 **baseフォルダ**
