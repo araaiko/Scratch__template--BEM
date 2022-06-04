@@ -1,4 +1,4 @@
-# Scratch__template--FLOCSS
+# Scratch__template--BEM
 BEM版テンプレート
 
 ※各フォルダには必ずエントリポイント用ファイルとして、**index.scss**を用意する。
