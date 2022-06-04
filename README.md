@@ -1,2 +1,2 @@
 # Scratch__template--FLOCSS
-LP用のテンプレ
+FLOCSS版テンプレート
