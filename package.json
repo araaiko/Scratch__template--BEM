@@ -14,6 +14,7 @@
         "css-declaration-sorter": "^6.2.2",
         "eslint-config-wordpress": "^2.0.0",
         "gulp": "^4.0.2",
+        "gulp-dart-sass": "^1.0.2",
         "gulp-merge-media-queries": "^0.2.1",
         "gulp-notify": "^4.0.0",
         "gulp-plumber": "^1.2.1",
@@ -24,9 +25,6 @@
         "stylelint-config-recommended-scss": "^6.0.0",
         "stylelint-prettier": "^2.0.0",
         "stylelint-scss": "^4.2.0"
-    },
-    "dependencies": {
-        "gulp-dart-sass": "^1.0.2"
     },
     "browserslist": [
         "last 2 versions",
