@@ -1,6 +1,13 @@
-/*=======================
-animation
-====================== */
+/**
+* カラーパレット
+* _color.scssで使用
+* 参考記事：https://qiita.com/1natsu172/items/ef6b0fcba6bbe380df1e
+*/
+
+/**
+* global/_palette.scss参照
+* 参考記事：https://qiita.com/1natsu172/items/ef6b0fcba6bbe380df1e
+*/
 
 /*====================================================================
 reset.css
@@ -119,6 +126,10 @@ section {
 /*=======================
 home
 ====================== */
+
+h1 {
+	background-color: pink;
+}
 
 /*=======================
 home mv
